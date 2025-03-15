@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+
+<body>
+    <p align="center">
+    <h2>Fill the Details</h1>
+    <form onsubmit="saved(event)"> <!--- useful if we work on backend later ,for now dealing only with frontend oncilck() can also be used-->
+        <table class="table1" border="3px">
+            <tr>
+                <td class="col1" >Name</td>
+                <td class="col2"><input id="one" type="text"></td>
+            </tr>
+            <tr>
+                <td class="col1">Age</td>
+                <td class="col2"><input id="two" type="number"></td>
+            </tr>
+            <tr>
+                <td class="col1">Gender</td>
+                <td class="col2"><input  type="radio" name="Gender" value="Male" id="male">Male 
+                    <input type="radio"name="Gender" value="Female" id = "female">Female
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">Course</td>
+                <td class="col2"><select  id="option">
+                    <option >JavaScript</option>
+                    <option >Python</option>
+                    <option>Java</option>
+                    <option >C#</option>
+                    <option >c</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="col1">Email</td>
+                <td class="col2"><input id="mail" type="text"></td>
+            </tr>
+            <tr>
+                <div class="pos">
+                <td colspan="2">
+                <button class="btn" type="submit">Save</button></td> 
+            </div> </tr>
+        </table>
+    </form>
+ <div id="tab">
+    <table class="table2" border="2px">
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>COURSE</th>
+            <th>GENDER</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>
+        <tbody id="body">
+
+        </tbody>
+    </table>
+</div> 
+</p>
+</body>
+
+</html>
+
+
+<script>
+    function saved(event){
+
+        event.preventDefault();
+
+        var name = document.getElementById("one").value
+        var age = document.getElementById("two").value
+        var gender = document.querySelector('input[name="Gender"]:checked')?.value //( considers the only value that is been checked by the user, querySelector is used because all shares the same name radio button
+                                                                                   //  ?  If the optional chaining operator is removed, and no radio button is selected, you'll get an error ,if used it handles smoothly by considering it as undefined )
+        var op = document.getElementById("option").value
+        var mails = document.getElementById("mail").value    
+
+        if(!name || !age || !gender || !op || !mails){
+            alert("Fill all the details!")
+            return;
+        }
+
+        var body = document.getElementById("body")
+
+        var row = document.createElement("tr") 
+
+        var namecol = document.createElement("td")
+        var agecol = document.createElement("td")
+        var gencol = document.createElement("td")
+        var course = document.createElement("td")
+        var mail = document.createElement("td")
+        var action = document.createElement("td")
+     
+        namecol.textContent = name
+        agecol.textContent = age
+        gencol.textContent = gender
+        course.textContent = op
+        mail.textContent = mails
+
+        var delbutton = document.createElement("button")
+        delbutton.textContent =" delete"
+        delbutton.className="btn2"
+        delbutton.onclick= function(){
+            row.remove()
+        }
+
+        action.append(delbutton) 
+
+        row.append(namecol,agecol,course,gencol,mail,action)
+
+        body.append(row)
+
+          // Clear the input fields for the next entry
+        document.getElementById("one").value = "";
+        document.getElementById("two").value = "";
+        document.querySelectorAll('input[name="Gender"]').forEach((el) => (el.checked = false));
+        document.getElementById("option").value = "JavaScript";
+        document.getElementById("mail").value = "";
+    } 
+</script>
