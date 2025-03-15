@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="bookproject.css">
 </head>
 <body>
+<div class="title-bar">
     <h1>BooksHolder</h1>
+</div>
 <div class="bookscontainer">
     <div class="container">
         <p > Demo </p>
@@ -24,13 +26,18 @@
     <div class="overlay"></div>
     <div class="popup">
         <h2>add book</h2>
-     <input  id="title" placeholder="book title">
-     <input id="author" placeholder="author">
-     <textarea placeholder="short description" id="description"></textarea>
-     <button class="update" onclick="add()">add</button>
-     <button class="cancel" >cancel</button>
+        <input  id="title" placeholder="book title">
+        <input id="author" placeholder="author">
+        <textarea placeholder="short description" id="description"></textarea>
+
+        <label for="file-input" class="file-label">Choose File</label>
+        <input type="file" id="file-input" onchange="updateFileName()">
+        <span class="file-name" id="file-name">No file chosen</span>
+
+        <button class="update" onclick="add()">add</button>
+        <button class="cancel" >cancel</button>
     </div>
 
-    <script src="bookproject.js"></script>
+    <script src="BooksHolder.js"></script>
 </body>
 </html>
