@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--my css-->
+    <link rel="stylesheet" href="travel.css">
+
+    <!--icon-->
+    <link rel="icon" href="travel.png">
+
+
+  
+   
+
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h1 class="logo">Na<span>tour</span></h1>
+        <ul class="navbar-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Tour</a></li>
+            <li><a href="">Explore</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="" class="link">Contact</a></li>
+
+        </ul>
+        <i class="fa-solid fa-bars menu_btn"></i>
+
+    </nav>
+
+    <!--header-->
+    <header>
+        <div class="header-content">
+            <h2>Explore the wonderful world</h2>
+            <div class="line"></div>
+            <h1>a natural gift</h1>
+            <a href="" class="link">learn more</a>
+        </div>
+            
+        </div>
+    </header>
+
+    <!--upcoming section events-->
+    <section class="events">
+        <h1>upcoming Events</h1>
+        <div class="line"></div>
+        <div class="row">
+            <div class="col">
+                <img src="https://picsum.photos/350/250?5" alt="tour img" class="event_img">
+                <h4>Mountain camp track</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, fugiat? Eligendi qui, aliquam modi quasi ratione, autem unde neque laborum officia consectetur in laudantium illum quidem perspiciatis facilis quis quae.</p>
+                <a href="#" class="link">learn more</a>
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/350/250?8" alt="tour img"class="event_img">
+                <h4>Drive Through Amazon</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, fugiat? Eligendi qui, aliquam modi quasi ratione, autem unde neque laborum officia consectetur in laudantium illum quidem perspiciatis facilis quis quae.</p>
+                <a href="#" class="link">learn more</a>
+            </div>
+    </section>
+
+    <!--explore the world-->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>Explore the world</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, fuga aliquid. Ullam laborum, distinctio itaque voluptatem beatae ipsum, autem esse doloremque sint, perferendis dolorem voluptas?</p>
+            <a href="#" class="link">learn more</a>
+        </div>
+    </section>
+
+    <!--section tours-->
+    <section class="tours">
+        <div class="row">
+            <div class="col_1">
+                <h1>upcoming Tours and Destinations</h1>
+                <div class="line"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam impedit dicta ea eos! Vel, hic.</p>
+                <a href="#" class="link">learn more</a>
+            </div>
+            
+            <div class="col_2">
+                <img src="https://picsum.photos/250/250/?1" alt="tour img"class="event_img">
+                <img src="https://picsum.photos/250/250?2" alt="tour img"class="event_img">
+                <img src="https://picsum.photos/250/250?3" alt="tour img"class="event_img">
+                <img src="https://picsum.photos/250/250?4" alt="tour img"class="event_img">
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="foot">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cumque?</p>
+        <p class="one">copyright@3426</p>
+    </footer>
+
+    <script src="travel.js"></script>
+</body>
+</html>
