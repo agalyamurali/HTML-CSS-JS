@@ -26,7 +26,7 @@ h1{
     font-size: larger;
     padding-bottom: 5px;
     color:rgb(151, 24, 24) ;
-    overflow-wrap: break-word;
+    overflow-wrap:break-word;
 }
 
 .container h3{
