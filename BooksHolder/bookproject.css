@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+h1{
+    background-color: olivedrab;
+    padding:10px 20px;
+    border-radius: 30px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin:0px 5px;
+    
+}
+.container{
+   background-color: #CFD2A4;
+    width:25%;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.container h2{
+    text-transform: capitalize;
+    font-size: larger;
+    padding-bottom: 5px;
+    color:rgb(151, 24, 24) ;
+}
+.container h3{
+    text-transform:uppercase;
+    font-size:medium;
+    padding-bottom: 5px;
+}
+.container p{
+    overflow-wrap: break-word;
+}
+.container button{
+    background-color: olivedrab;
+    color: #CFD2A4;
+    border:0;
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: 550;
+    border-radius: 40px;
+}
+.container button:hover{
+    background-color: rgb(130, 21, 21);
+}
+.addbtn{
+    background-color: olivedrab;
+    color: black;
+    border: 0;
+    border-radius: 50px;
+    height:60px;
+    width:60px;
+    font-size:xx-large ;
+    font-weight: 600;
+    position:fixed;
+    bottom:40px;
+    right:60px;
+}
+.addbtn:hover{
+    background-color: rgb(130, 190, 16);
+}
+
+.overlay{
+    background-color:olivedrab;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    display:none;
+    opacity:0.6 ;
+}
+.popup{
+    background-color: olivedrab;
+    position: absolute;
+    top:35%;
+    left:35%;
+    padding:20px 30px;
+    border-radius: 40px;
+    text-transform: capitalize;
+    width:400px;
+    display:none;
+}
+.popup h2{
+    padding-bottom: 5px;
+}
+.popup input{
+    border:none;
+    border-bottom: solid #CFD2A4 2px;
+    background: transparent;
+    padding:10px;
+    width:100%;
+    font-size: medium;
+
+}
+.popup input::placeholder{
+    text-transform: capitalize;
+    color:  rgb(54, 56, 49);
+    font-size: medium;
+}
+.popup textarea{
+    border:none;
+    border-bottom: solid #CFD2A4 2px;
+    background: transparent;
+    padding:10px;
+    width:100%;
+    font-size: medium;
+    font-family: sans-serif;
+}
+.popup textarea::placeholder{
+    text-transform: capitalize;
+    color: rgb(54, 56, 49);
+}
+.popup button{
+    background-color: #CFD2A4;
+    border:none;
+    border-radius: 30px;
+    padding:4px 7px;
+    margin:10px;
+}
+.popup button:hover{
+    background-color:#aaae84 ;
+}
+.popup input:focus{
+    outline: none;
+}
+.popup textarea:focus{
+    outline:#CFD2A4
+}
+
+
